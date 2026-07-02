@@ -1,1 +1,556 @@
-git
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brew Haven | Premium Café</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <!-- Swiper -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!--================ LOADER ================-->
+
+<div id="loader">
+    <div class="coffee-loader">
+        <div class="cup">
+            <div class="steam steam1"></div>
+            <div class="steam steam2"></div>
+            <div class="steam steam3"></div>
+        </div>
+        <h2>Brewing Happiness...</h2>
+    </div>
+</div>
+
+<!-- Cursor -->
+
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
+
+<!-- Scroll Progress -->
+
+<div id="progress-bar"></div>
+
+<!--================ HEADER ================-->
+
+<header id="header">
+
+    <nav class="navbar">
+
+        <a href="#" class="logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            Brew Haven
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-right">
+
+            <button id="dark-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!--================ HERO ================-->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            Fresh Organic Coffee
+        </span>
+
+        <h1>
+            Freshly Brewed
+            <span>Happiness</span>
+        </h1>
+
+        <p>
+            Experience handcrafted coffee, delicious pastries,
+            and a cozy atmosphere designed for unforgettable moments.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#" class="btn primary">
+                Order Now
+            </a>
+
+            <a href="#menu" class="btn secondary">
+                Explore Menu
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <span></span>
+    </div>
+
+</section>
+
+<!--================ FEATURED MENU ================-->
+
+<section class="menu section" id="menu">
+
+    <div class="section-title">
+
+        <span>Our Menu</span>
+
+        <h2>Featured Coffee</h2>
+
+    </div>
+
+    <div class="coffee-grid">
+
+        <article class="coffee-card">
+
+            <img src="assets/images/coffee1.jpg" alt="Espresso">
+
+            <div class="card-content">
+
+                <h3>Classic Espresso</h3>
+
+                <p>
+                    Rich and bold Italian espresso.
+                </p>
+
+                <div class="price-row">
+
+                    <span>$6.99</span>
+
+                    <button>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="coffee-card">
+
+            <img src="assets/images/coffee2.jpg" alt="Latte">
+
+            <div class="card-content">
+
+                <h3>Vanilla Latte</h3>
+
+                <p>
+                    Smooth espresso with steamed milk.
+                </p>
+
+                <div class="price-row">
+
+                    <span>$8.99</span>
+
+                    <button>Add to Cart</button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="coffee-card">
+
+            <img src="assets/images/coffee3.jpg" alt="Cappuccino">
+
+            <div class="card-content">
+
+                <h3>Cappuccino</h3>
+
+                <p>
+                    Creamy milk foam & premium beans.
+                </p>
+
+                <div class="price-row">
+
+                    <span>$7.49</span>
+
+                    <button>Add to Cart</button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="coffee-card">
+
+            <img src="assets/images/coffee4.jpg" alt="Mocha">
+
+            <div class="card-content">
+
+                <h3>Chocolate Mocha</h3>
+
+                <p>
+                    Chocolate meets rich espresso.
+                </p>
+
+                <div class="price-row">
+
+                    <span>$9.99</span>
+
+                    <button>Add to Cart</button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!--================ ABOUT ================-->
+
+<section class="about section" id="about">
+
+    <div class="about-image">
+
+        <img src="assets/images/about.jpg" alt="Cafe">
+
+    </div>
+
+    <div class="about-content">
+
+        <span>About Us</span>
+
+        <h2>Crafting Coffee Since 2014</h2>
+
+        <p>
+
+            Every cup tells a story.
+            Our café brings together premium beans,
+            handcrafted recipes, and warm hospitality.
+
+        </p>
+
+        <div class="counter-wrapper">
+
+            <div class="counter">
+
+                <h3 data-target="10">0</h3>
+
+                <p>Years</p>
+
+            </div>
+
+            <div class="counter">
+
+                <h3 data-target="50">0</h3>
+
+                <p>Varieties</p>
+
+            </div>
+
+            <div class="counter">
+
+                <h3 data-target="25000">0</h3>
+
+                <p>Customers</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ GALLERY ================-->
+
+<section class="gallery section" id="gallery">
+
+    <div class="section-title">
+
+        <span>Gallery</span>
+
+        <h2>Inside Our Café</h2>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <img src="assets/images/gallery1.jpg" alt="">
+        <img src="assets/images/gallery2.jpg" alt="">
+        <img src="assets/images/gallery3.jpg" alt="">
+        <img src="assets/images/gallery4.jpg" alt="">
+        <img src="assets/images/gallery5.jpg" alt="">
+        <img src="assets/images/gallery6.jpg" alt="">
+
+    </div>
+
+</section>
+
+<!--================ TESTIMONIALS ================-->
+
+<section class="testimonials section" id="testimonials">
+
+    <div class="section-title">
+
+        <span>Reviews</span>
+
+        <h2>Happy Customers</h2>
+
+    </div>
+
+    <div class="swiper testimonialSwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+
+                <div class="testimonial-card">
+
+                    <img src="assets/images/user1.jpg" alt="">
+
+                    <h3>Emma Wilson</h3>
+
+                    <p>
+
+                        Best coffee in town.
+                        Beautiful atmosphere and friendly staff.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-slide">
+
+                <div class="testimonial-card">
+
+                    <img src="assets/images/user2.jpg" alt="">
+
+                    <h3>Michael Brown</h3>
+
+                    <p>
+
+                        Premium coffee with amazing desserts.
+                        Highly recommended.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-slide">
+
+                <div class="testimonial-card">
+
+                    <img src="assets/images/user3.jpg" alt="">
+
+                    <h3>Sophia Lee</h3>
+
+                    <p>
+
+                        My favorite place to work and relax.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ CONTACT ================-->
+
+<section class="contact section" id="contact">
+
+    <div class="contact-form">
+
+        <h2>Get In Touch</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                placeholder="Email"
+                required>
+
+            <input
+                type="tel"
+                placeholder="Phone">
+
+            <textarea
+                placeholder="Message"></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="contact-info">
+
+        <h2>Visit Us</h2>
+
+        <p>
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            123 Coffee Street,
+            New York
+
+        </p>
+
+        <p>
+
+            <i class="fa-solid fa-phone"></i>
+
+            +1 555 987 6543
+
+        </p>
+
+        <p>
+
+            <i class="fa-solid fa-envelope"></i>
+
+            hello@brewhaven.com
+
+        </p>
+
+        <div class="map-placeholder">
+
+            Google Maps
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>Brew Haven</h3>
+
+            <p>
+
+                Premium handcrafted coffee served daily.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+
+        </div>
+
+        <div>
+
+            <h3>Newsletter</h3>
+
+            <form>
+
+                <input
+                    type="email"
+                    placeholder="Email">
+
+                <button>
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Brew Haven. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+<!--================ JS ================-->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/darkmode.js"></script>
+
+</body>
+</html>
